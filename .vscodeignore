@@ -3,6 +3,7 @@
 src/**
 .gitignore
 .yarnrc
+.history
 vsc-extension-quickstart.md
 **/tsconfig.json
 **/eslint.config.mjs

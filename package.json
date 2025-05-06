@@ -1,5 +1,6 @@
 {
     "name": "api-helper",
+    "publisher": "coldmoon",
     "displayName": "API Helper",
     "description": "A VS Code extension to manage and suggest APIs via comments",
     "version": "0.0.1",
@@ -58,5 +59,14 @@
         "@types/node": "^20.14.11",
         "@types/vscode": "^1.85.0",
         "typescript": "^5.5.3"
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Li-JunHeng/api-helper.git"
+    },
+    "homepage": "https://github.com/Li-JunHeng",
+    "bugs": {
+        "url": "https://github.com/Li-JunHeng/api-helper/issues"
+    },
+    "icon": "images/icon.png"
 }

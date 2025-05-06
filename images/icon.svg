@@ -1,0 +1,16 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆形，带微弱阴影 -->
+  <circle cx="64" cy="64" r="60" fill="#1E1E1E"/>
+  <circle cx="64" cy="64" r="60" fill="none" stroke="#007ACC" stroke-width="4"/>
+  
+  <!-- 地球仪经纬线 -->
+  <circle cx="64" cy="64" r="40" fill="none" stroke="#007ACC" stroke-width="3"/>
+  <path d="M64 24 A40 40 0 0 1 64 104" fill="none" stroke="#007ACC" stroke-width="3"/>
+  <path d="M24 64 H104" fill="none" stroke="#007ACC" stroke-width="3"/>
+  
+  <!-- @ 符号 -->
+  <text x="64" y="80" font-family="Arial, sans-serif" font-size="50" fill="#FFFFFF" text-anchor="middle">@</text>
+  
+  <!-- 微发光效果 -->
+  <circle cx="64" cy="64" r="60" fill="none" stroke="#007ACC" stroke-width="2" opacity="0.3"/>
+</svg>
