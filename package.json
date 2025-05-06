@@ -1,0 +1,62 @@
+{
+    "name": "api-helper",
+    "displayName": "API Helper",
+    "description": "A VS Code extension to manage and suggest APIs via comments",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.99.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "configuration": {
+            "title": "API Helper",
+            "properties": {
+                "apiHelper.languages": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "default": [
+                        "javascript",
+                        "typescript",
+                        "python"
+                    ],
+                    "description": "要解析的语言 ID 列表，比如 [\"javascript\",\"python\"]。"
+                },
+                "apiHelper.excludeFolders": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "default": [
+                        "**/node_modules/**",
+                        "**/.git/**"
+                    ],
+                    "description": "扫描时排除的文件夹 glob 模式列表。"
+                }
+            }
+        },
+        "commands": [
+            {
+                "command": "apiHelper.rebuildIndex",
+                "title": "API Helper: 重建索引"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/node": "^20.14.11",
+        "@types/vscode": "^1.85.0",
+        "typescript": "^5.5.3"
+    }
+}
